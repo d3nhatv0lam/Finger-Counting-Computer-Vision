@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Finger-Counting</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="h1-decoration">
+        <h1>Number recognition from 1 to 5 via left-hand images</h1>
+      </div>
+        <div id="flex-container">
+          <div class="flex-left">
+            <div id="webcam-container"></div>
+            <div class="hdsd"><b>Direction: </b>Show your left hand.</div>
+          </div>
+          <div class="flex-right">            
+            <div id="img-result">Hinh de day ne</div>
+            <h2>RESULT: <span id="text-result">So de day ne</span></h2>
+            <div id="label-container"></div>
+          </div>
+        </div>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+
+  <footer>
+    © 2025. Dương Minh Đức B2303807 & Võ Nguyễn Bảo Nghi B2303830 <br>
+    Nhập môn trí tuệ nhân tạo
+  </footer>
+</html>

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+:root {
+    --color-1: #E2A8BE;
+    --color-2: #AC365C;
+    --color-3: #C8557C;
+    --color-4: #EDDDE4;
+    --color-5: #FBF2F2;
+}
+
+/* css webcam */
+#webcam-container canvas.webcam {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 325px;
+  height: 325px;
+}
+
+body {
+  background-color: var(--color-4);
+}
+
+.h1-decoration {
+    padding: 20px 0;
+    margin: 25px 20px;
+    border: 5px dotted var(--color-2);
+    border-radius: 15%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Lilita One", sans-serif;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: var(--color-2);
+  margin: 0;
+
+}
+
+#flex-container {
+  display: flex;
+  height: 525px;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.flex-left, .flex-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  border: 2px var(--color-3) solid; 
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hdsd {
+  margin-top: 10px;
+  color: var(--color-2);
+  font-size: 20px;
+}
+
+.flex-right {
+  flex-direction: column;
+}
+
+#webcam-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  justify-content: center;
+  border: 3px dashed var(--color-1);
+  border-radius: 20px;
+  background-color: var(--color-5);
+}
+
+#img-result {
+  height: 300px;
+  width: 300px;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+h2 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 30px;
+  color: var(--color-2);
+  margin: 20px 0;
+}
+
+#text-result {
+  font-size: 35px;
+  color: var(--color-3);
+}
+
+#label-container {
+  text-align: center;
+}
+
+#label-container div {
+  text-transform: capitalize;
+  color: var(--color-2);
+}
+
+#label-container::before {
+  content: "- - - Rate - - -";
+  color: var(--color-2);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#img-result .guess-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-2);
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--color-5);
+  border-top: 1px solid var(--color-3);
+}
