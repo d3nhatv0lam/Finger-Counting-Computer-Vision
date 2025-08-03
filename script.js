@@ -86,14 +86,24 @@ function setGuessNumber(guessNumber)
 function setGuessImage(guessNumber){
     var imgDiv = document.getElementById("img-result");
     if (imgDiv == null) return;
-    
-    var newImgString = guessNumberToImage(guessNumber);
-    if (newImgString === "" || newImgString === imgDiv.innerHTML)
+
+    var newImg = guessNumberToImage(guessNumber);
+    if (newImg.src === imgDiv.childNodes[0].src)
         return;
-    imgDiv.innerHTML = newImgString;
+    imgDiv.innerHTML = ""; // Clear previous image
+    imgDiv.appendChild(newImg);
+//     var newImgString = guessNumberToImage(guessNumber);
+//     if (newImgString === "" || newImgString === imgDiv.innerHTML)
+//         return;
+//     imgDiv.innerHTML = newImgString;
 }
 
 function guessNumberToImage(guessNumber) {
     if (guessNumber < 0 || guessNumber > maxPredictions) return "";
-    return `<img class="guess-image" src="./assets/numbers/${guessNumber}.png" alt="Guess Image">`;
+    var img = document.createElement("img");
+    img.classList.add("guess-image");
+    img.src = `./assets/numbers/${guessNumber}.png`;
+    img.alt = "Guess Image";
+    return img;
+    // return `<img class="guess-image" src="./assets/numbers/${guessNumber}.png" alt="Guess Image">`;
 }

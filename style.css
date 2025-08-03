@@ -148,12 +148,13 @@ footer {
   }
 
   #webcam-container canvas.webcam { 
-  width: 80%;
-  height: 80%;
+    width: 80%;
+    height: 80%;
   }
 
   #img-result {
-    width: 60%;
-    height: 100%;
+    margin-top: 5px;
+    width: 150px;
+    height: 150px;
   }
 }
