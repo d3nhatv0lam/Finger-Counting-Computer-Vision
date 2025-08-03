@@ -128,3 +128,32 @@ footer {
   background-color: var(--color-5);
   border-top: 1px solid var(--color-3);
 }
+
+@media screen and (max-width: 768px) {
+  #flex-container {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+  }
+
+  .flex-left, .flex-right {
+    width: 100%;
+    height: auto;
+  }
+
+  #webcam-container {
+    width: 70%;
+    height: auto;
+    padding: 10px;
+  }
+
+  #webcam-container canvas.webcam { 
+  width: 80%;
+  height: 80%;
+  }
+
+  #img-result {
+    width: 60%;
+    height: 100%;
+  }
+}
